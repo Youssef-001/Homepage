@@ -1,1 +1,1 @@
-A personal homepage showcasing my projects, complete with links to each. The site is fully responsive, ensuring an optimal viewing experience across devices, and adheres to web accessibility (a11y) standards. This project highlights my ability to create professional, user-friendly websites that prioritize inclusivity and responsiveness.
+A personal homepage showcasing my projects, complete with links to each. The site is fully responsive, ensuring an optimal viewing experience across devices, and adheres to web accessibility (a11y) standards. 
