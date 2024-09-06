@@ -178,12 +178,29 @@ footer {
   .container {
     max-width: 1024px;
   }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .about {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* lg */
 @media (max-width: 1024px) {
   .container {
     max-width: 768px;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .about > img {
+    width: 100%;
   }
 }
 
