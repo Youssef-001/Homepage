@@ -6,9 +6,14 @@
   padding-right: 0.5rem;
 }
 
+:root {
+  --primary-color: #fffdd0;
+  --secondary-color: #001f3f;
+}
+
 body {
   font-family: "Roboto mono";
-  background-color: #fffdd0;
+  background-color: var(--primary-color);
 }
 
 .container {
@@ -17,11 +22,16 @@ body {
 
 header {
   /* background: linear-gradient(45deg, #ff7e5f, #feb47b); */
-  background-color: #001f3f;
+  background-color: var(--secondary-color);
 }
 .about {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 2rem;
+}
+
+.info {
+  flex: 1;
 }
 
 .about > img {
@@ -42,7 +52,7 @@ header {
   border: 2px solid black;
   box-shadow: 1 1 0;
   margin: auto auto;
-  background-color: #fffdd0;
+  background-color: var(--primary-color);
 }
 
 h1 {
@@ -58,19 +68,76 @@ p {
 
 .cards {
   display: flex;
-  flex: 0;
   flex-wrap: wrap;
   gap: 3rem;
+  justify-content: space-between;
+  /* display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 2rem; */
 }
 .card {
-  border: 3px solid red;
   width: 600px;
+  height: 100%;
+  padding: 1rem;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cards > * {
+  /* flex: 0 1 1; */
 }
 
 .card > img {
   object-fit: cover;
   width: 100%;
 }
+
+.card > img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.card > img {
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.foot {
+  display: flex;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+.foot > * {
+  flex: 1;
+}
+
+.street {
+  margin-top: 3rem;
+}
+.footer-image {
+  width: 400px;
+}
+
+.phone,
+.email {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* .phone > * {
+  flex: 1;
+}
+.email > * {
+  flex: 1;
+} */
 
 /* 2xl */
 @media (max-width: 1536px) {
@@ -111,5 +178,23 @@ p {
 @media (max-width: 475px) {
   .container {
     width: 100%;
+  }
+
+  .about > img {
+    width: 100%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.6rem;
+  }
+
+  .footer-image {
+    /* width: 100px; */
+    width: 50%;
   }
 }
