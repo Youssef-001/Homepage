@@ -99,6 +99,7 @@ p {
 
 .card {
   flex-shrink: 1;
+  height: 100%;
 }
 
 .card > img {
