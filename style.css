@@ -1,0 +1,115 @@
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+body {
+  font-family: "Roboto mono";
+  background-color: #fffdd0;
+}
+
+.container {
+  /* background: linear-gradient(45deg, #ff7e5f, #feb47b); */
+}
+
+header {
+  /* background: linear-gradient(45deg, #ff7e5f, #feb47b); */
+  background-color: #001f3f;
+}
+.about {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.about > img {
+  height: 500px;
+}
+
+.info > p {
+  margin-top: 2rem;
+}
+
+.links {
+  margin-top: 10px;
+  float: right;
+}
+
+.info {
+  padding: 1rem;
+  border: 2px solid black;
+  box-shadow: 1 1 0;
+  margin: auto auto;
+  background-color: #fffdd0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.5rem;
+}
+
+.work {
+  margin-top: 5rem;
+}
+
+.cards {
+  display: flex;
+  flex: 0;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.card {
+  border: 3px solid red;
+  width: 600px;
+}
+
+.card > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
