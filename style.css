@@ -31,7 +31,7 @@ header {
 }
 
 .info {
-  flex: 1;
+  flex: 1 1 50%;
 }
 
 .about > img {
@@ -45,6 +45,10 @@ header {
 .links {
   margin-top: 10px;
   float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .info {
@@ -66,6 +70,10 @@ p {
   margin-top: 5rem;
 }
 
+.work > h1 {
+  margin-bottom: 3rem;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -78,13 +86,19 @@ p {
 }
 .card {
   width: 600px;
-  height: 100%;
+  height: auto;
+  min-height: 300px;
   padding: 1rem;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
+  /* flex-shrink: 1; */
 }
 
 .cards > * {
   /* flex: 0 1 1; */
+}
+
+.card {
+  flex-shrink: 1;
 }
 
 .card > img {
@@ -105,6 +119,7 @@ p {
 footer {
   background-color: var(--secondary-color);
   color: white;
+  margin-top: 5rem;
 }
 
 .foot {
@@ -130,7 +145,18 @@ footer {
   gap: 1rem;
   margin-top: 2rem;
   flex-wrap: wrap;
+  align-items: center;
 }
+
+.links > a:hover {
+  transform: rotate(1turn);
+  transition: transform 0.6s;
+}
+
+/* .links > a {
+  transform: rotate(1turn);
+  transition: transform 1s;
+} */
 
 /* .phone > * {
   flex: 1;
@@ -182,6 +208,10 @@ footer {
 
   .about > img {
     width: 100%;
+  }
+
+  .work {
+    margin-top: 1rem;
   }
 
   h1,

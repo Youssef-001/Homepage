@@ -1,0 +1,274 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+.page-content {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  grid-row: 1/2;
+  grid-column: 2/-1;
+  background-color: #333333;
+  padding: 1.5rem;
+  color: white;
+}
+
+.sidebar {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  background-color: #4a90e2;
+  padding: 1rem;
+  width: 15vw;
+}
+
+.content {
+  grid-row: 2/-1;
+  grid-column: 2/-1;
+  background-color: #f5f5f5;
+  padding: 5rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.todo:hover {
+  background-color: #ff6f6199;
+}
+
+.project-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.todos {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-family: cursive;
+}
+
+.todo {
+  display: flex;
+  gap: 1rem;
+}
+
+.todo-delete {
+  margin-left: auto;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-button {
+  border: none;
+  font-size: 1.2rem;
+  background-color: #4a90e2;
+  color: #333333;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.project-button:hover {
+  background-color: #33333388;
+  color: white;
+}
+
+.project-button::before {
+  content: "#";
+  color: white;
+
+  position: absolute;
+  left: 1rem;
+}
+
+.add-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.add-todo-button {
+  cursor: pointer;
+  border: none;
+}
+
+.add-Todo {
+  display: flex;
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+.add-Todo:hover {
+  color: black;
+  font-size: bold;
+  background-color: #ff6f6166;
+  cursor: pointer;
+}
+
+form {
+  border: 2px solid grey;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 1rem;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+}
+
+.submit {
+  width: 5rem;
+}
+
+.form-buttons {
+  margin-left: auto;
+  gap: 10px;
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+button img {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.my-projects button {
+  background-color: #4a90e2;
+  border: none;
+}
+
+.my-projects {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+#project-form img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* #project-form button{
+    
+    background-color:#4A90E2 ;
+    border: none;
+} */
+
+#project-form {
+  border: none;
+}
+
+#project-form input {
+  border-radius: 12px;
+  height: 1.1rem;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.div-form {
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.div-form textarea {
+  padding: 6px;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.div-form label {
+  font-size: 1.2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.description,
+.task-name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.user-info img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  gap: 1rem;
+}
+
+#circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+}
+
+.two {
+  background-color: #f48318;
+}
+
+.one {
+  background-color: red;
+}
+
+.three {
+  background-color: blue;
+}
+
+.four {
+  background-color: #90cc8c;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+.header {
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
